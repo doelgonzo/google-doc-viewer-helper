@@ -20,8 +20,7 @@ First, to generate a generic Google Doc URL, leverage
 | parameter      | type   | options           | defaultValue | description                                                           |
 |----------------|--------|-------------------|--------------|-----------------------------------------------------------------------|
 | params         | object | n/a               | null         | All parameters to be used in a Google Doc url                         |
-| viewerOverride |        | 'default'/'gview' | 'default'    | Which viewer implementation Google Docs will use to open the document |
-|                |        |                   |              |                                                                       |
+| viewerOverride | string | 'default'/'gview' | 'default'    | Which viewer implementation Google Docs will use to open the document |
 
 ```javascript
 const testFileUrl = 'http://www.fakeurl.com/myTest.pdf';

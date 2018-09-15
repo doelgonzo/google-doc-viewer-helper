@@ -71,7 +71,7 @@ gDocHelper.isSupportedFormat('http://www.fakeurl.com/myTest.bat');
 
 
 ## Running tests
-We leverage [mocha](https://mochajs.org/) and [chai](http://www.chaijs.com/)for testing, and cover common usecases as 
+We leverage [mocha](https://mochajs.org/) and [chai](http://www.chaijs.com/) for testing, and cover common usecases as 
 part of simple unit testing.
 ```
 npm test

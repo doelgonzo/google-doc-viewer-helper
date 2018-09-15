@@ -11,7 +11,11 @@
     "test": "mocha --require @babel/register \"src/**/**.test.js\"",
     "build:clean": "rimraf ./gdoc-viewer-helper.min.js",
     "prebuild": "npm run build:clean",
-    "build": "browserify ./src/gdoc-viewer-helper.js | uglifyjs -mc > ./gdoc-viewer-helper.min.js"
+    "build": "browserify ./src/gdoc-viewer-helper.js | uglifyjs -mc > ./gdoc-viewer-helper.min.js",
+    "preversion": "npm test",
+    "version": "npm run build && git add -A dist",
+    "postversion": "git push && git push --tags && rm -rf build/temp"
+
   },
   "browserify": {
     "transform": [

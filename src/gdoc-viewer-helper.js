@@ -1,7 +1,9 @@
 import generators from './helpers/generators';
 import validators from './helpers/validators';
 
-export default {
+const gDocViewHelper = {
   ...generators,
   ...validators,
 };
+
+export default gDocViewHelper;

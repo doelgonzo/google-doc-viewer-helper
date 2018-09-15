@@ -37,7 +37,7 @@ gDocHelper.generateGoogleDocUrlWithParams(myParams, 'gview');
 ```
 
 You can also use shorthand to generate embedded Google doc urls (Most common usecase).
-`gDocHelper#generateGoogleDocUrlWithParams(urlToEmbed, viewerOverride)`
+`gDocHelper#generateGoogleDocUrlWithParams(urlToEmbed, additionalParams, viewerOverride)`
 
 | parameter        | type   | options           | defaultValue | description                                                                                 |
 |------------------|--------|-------------------|--------------|---------------------------------------------------------------------------------------------|
@@ -51,6 +51,7 @@ gDocHelper.generateEmbeddedGoogleDocUrl(testFileUrl);
 ```
 
 You can also simply check if a specific file format _can_ be opened by Google Docs Viewer
+`gDocHelper#isSupportedFormat(urlToValidate)`
 
 | parameter        | type   | description                                                        |
 |------------------|--------|--------------------------------------------------------------------|

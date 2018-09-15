@@ -10,7 +10,7 @@ const getBadParamsMessage = badParam => `Parameter "${badParam}" was passed in w
 const generateGoogleDocUrlWithParams = (params, viewerOverride) => {
   const viewer = supportedViewers[viewerOverride] || supportedViewers.default;
   if (!validators.isSupportedFormat(params.url)) {
-    console.error('Invalid parameter "url" provided. Invalid Google doc will be returned.');
+    console.error('Invalid parameter "url", Google doc will still be returned but may yield unexpected results.');
   }
 
   return generateUrl(viewer.baseUrl, params);

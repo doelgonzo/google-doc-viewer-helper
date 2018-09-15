@@ -85,6 +85,7 @@ npm test
 
 
 ## TODO
+* Remove lodash dependency
 * Expose supported formats in case they want to be listed or used elsewhere
 * Expose supported viewers and their requirements.
   * Enforce requirements when using these viewers

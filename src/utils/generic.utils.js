@@ -14,15 +14,15 @@ const getFileExtension = (filename) => {
     return '';
   }
 
-  const a = filename.toLowerCase().split('.');
-
-  if (a.length === 1 // There were no '.' in the filename
-    || (a[0] === '' && a.length === 2) // the first
-    || (a[a.length - 1].indexOf('/') !== -1)
-  ) {
-    return '';
+  if (filename.includes('.')) {
+    return filename
+      .split('.')
+      .pop()
+      .split('?') // Remove query params that might be present
+      .shift()
+      .toLowerCase();
   }
-  return a.pop();
+  return '';
 };
 
 const isEmpty = (obj) => {

@@ -27,8 +27,12 @@ describe('generic utils', () => {
     expect(getFileExtension(null)).to.equal('');
   });
 
+  it('can handle query parameters and still extract the extension', () => {
+    expect(getFileExtension('test.png?a=1234')).to.equal('png');
+  });
 
   it('can convert an object to an encoded query string', () => {
     expect(objectToQueryString(paramObj)).to.equal(encodedQueryString);
   });
+
 });

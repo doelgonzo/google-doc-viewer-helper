@@ -1,11 +1,11 @@
 {
   "name": "google-doc-viewer-helper",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Doel L Gonzalez II <doel.gonzo@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/doelgonzo/google-doc-viewer-helper",
   "description": "Helper utilities for Google Doc Viewer",
-  "main": "gdoc-viewer-helper.min.js",
+  "main": "index.js",
   "scripts": {
     "lint": "eslint src/",
     "test": "mocha --require @babel/register \"src/**/**.test.js\"",
@@ -47,6 +47,6 @@
     "uglify-js": "^3.4.9"
   },
   "dependencies": {
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.10"
   }
 }

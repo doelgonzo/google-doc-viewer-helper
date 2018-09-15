@@ -1,5 +1,13 @@
 # Google Doc Viewer Helper Utils
-
+<a href="https://packagephobia.now.sh/result?p=google-doc-viewer-helper">
+  <img src="https://packagephobia.now.sh/badge?p=google-doc-viewer-helper" alt="install size">
+</a>
+<a href="https://github.com/doelgonzo/google-doc-viewer-helper/blob/master/LICENSE.md">
+  <img src="https://img.shields.io/npm/l/google-doc-viewer-helper.svg" alt="license">
+</a>
+<a href="https://codecov.io/github/doelgonzo/google-doc-viewer-helper">
+  <img alt="Coverage Status" src="https://img.shields.io/codecov/c/github/doelgonzo/google-doc-viewer-helper/master.svg?maxAge=43200">
+</a>
 Google provides a Doc Viewer that leverages their [Google Docs](https://www.google.com/docs/about/) platform
 to show a certain amount of file formats it is compatible with. This library is to ensure we can generate valid Google Doc Viewer URLs, and serves as a utility to know if files are a valid format, that can be leveraged in applications such as ensuring we don't unnecessarily try to route users to an embedded Google Doc Viewer that can't open the file requested anyway.
 

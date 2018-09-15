@@ -1,9 +1,8 @@
-import merge from 'lodash/merge';
-import has from 'lodash/has';
-
 import { generateUrl } from '../utils/generic.utils';
 import { supportedViewers } from '../config/index';
 import validators from './validators';
+
+const { hasOwnProperty } = Object.prototype;
 
 const getBadParamsMessage = badParam => `Parameter "${badParam}" was passed in with params object, you may obtain unexpected results`;
 
@@ -17,18 +16,20 @@ const generateGoogleDocUrlWithParams = (params, viewerOverride) => {
 };
 
 const generateEmbeddedGoogleDocUrl = (urlToEmbed, additionalParams, viewerOverride) => {
-  if (has(additionalParams, 'url')) {
-    console.warn(getBadParamsMessage('url'));
-  }
-  if (has(additionalParams, 'embedded')) {
-    console.warn(getBadParamsMessage('embedded'));
+  if (additionalParams) {
+    if (hasOwnProperty.call(additionalParams, 'url')) {
+      console.warn(getBadParamsMessage('url'));
+    }
+    if (hasOwnProperty.call(additionalParams, 'embedded')) {
+      console.warn(getBadParamsMessage('embedded'));
+    }
   }
 
   const defaultParams = {
     embedded: true,
     url: urlToEmbed,
   };
-  const allParams = merge({}, defaultParams, additionalParams);
+  const allParams = Object.assign({}, defaultParams, additionalParams);
 
   return generateGoogleDocUrlWithParams(allParams, viewerOverride);
 };

@@ -2,7 +2,6 @@
 .DS_Store
 
 # IntelliJ/WebStorm
-build/
 .idea
 
 # node.js/npm

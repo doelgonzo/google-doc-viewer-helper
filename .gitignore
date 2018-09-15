@@ -11,3 +11,4 @@ yarn-error.log
 
 # Results from running unit tests/coverage tests
 .nyc_output
+coverage.lcov

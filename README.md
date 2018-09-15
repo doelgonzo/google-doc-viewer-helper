@@ -10,6 +10,7 @@
 </a>
 <br>
 <br>
+
 Google provides a Doc Viewer that leverages their [Google Docs](https://www.google.com/docs/about/) platform
 to show a certain amount of file formats it is compatible with. This library is to ensure we can generate valid Google Doc Viewer URLs, and serves as a utility to know if files are a valid format, that can be leveraged in applications such as ensuring we don't unnecessarily try to route users to an embedded Google Doc Viewer that can't open the file requested anyway.
 

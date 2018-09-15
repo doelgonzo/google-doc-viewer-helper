@@ -41,7 +41,7 @@ You can also use shorthand to generate embedded Google doc urls (Most common use
 | parameter        | type   | options           | defaultValue | description                                                                                 |
 |------------------|--------|-------------------|--------------|---------------------------------------------------------------------------------------------|
 | urlToEmbed       | string | n/a               | null         | URL to file we wish viewer to open                                                          |
-| additionalParams | object | n/a               | null         | Additional parameters for the Google Doc URL <br> (*WARNING*: Can override default params)    |                 
+| additionalParams | object | n/a               | null         | Additional parameters for the Google Doc URL <br> (**WARNING**: Can override default params)    |                 
 | viewerOverride   | string | 'default'/'gview' | 'default'    | Which viewer implementation Google Docs will use to open the document                       |
 ```javascript
 const testFileUrl = 'http://www.fakeurl.com/myTest.pdf';

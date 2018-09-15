@@ -1,1 +1,1 @@
-export gDocHelper from 'gdoc-viewer-helper.min';
+export * from './dist/gdoc-viewer-helper.min';

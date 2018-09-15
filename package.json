@@ -1,11 +1,11 @@
 {
   "name": "google-doc-viewer-helper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Doel L Gonzalez II <doel.gonzo@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/doelgonzo/google-doc-viewer-helper",
   "description": "Helper utilities for Google Doc Viewer",
-  "main": "src/gdoc-viewer-helper.js",
+  "main": "gdoc-viewer-helper.min.js",
   "scripts": {
     "lint": "eslint src/",
     "test": "mocha --require @babel/register \"src/**/**.test.js\"",

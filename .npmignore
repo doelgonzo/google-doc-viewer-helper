@@ -1,0 +1,7 @@
+src
+config
+node_modules
+.npmignore
+.nyc_output
+.babelrc
+.idea

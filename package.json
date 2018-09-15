@@ -14,7 +14,7 @@
     "build": "browserify ./src/gdoc-viewer-helper.js | uglifyjs -mc > ./dist/gdoc-viewer-helper.min.js",
     "preversion": "npm test",
     "version": "npm run build && git add -A dist",
-    "postversion": "git push && git push --tags && rm -rf build/temp"
+    "postversion": "git push && git push --tags"
   },
   "browserify": {
     "transform": [

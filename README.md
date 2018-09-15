@@ -15,6 +15,7 @@ import gDocHelper from 'google-doc-viewer-helper';
 ```
 
 First, to generate a generic Google Doc URL, leverage
+
 `gDocHelper#generateGoogleDocUrlWithParams(params, viewerOverride)`
 
 | parameter      | type   | options           | defaultValue | description                                                           |

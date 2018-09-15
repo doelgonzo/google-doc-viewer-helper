@@ -1,4 +1,4 @@
-# google-doc-viewer-helper
+# Google Doc Viewer Helper Utils
 
 Google provides a Doc Viewer that leverages their [Google Docs](https://www.google.com/docs/about/) platform
 to show a certain amount of file formats it is compatible with

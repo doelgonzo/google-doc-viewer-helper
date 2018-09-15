@@ -77,6 +77,11 @@ part of simple unit testing.
 npm test
 ```
 
+## TODO
+* Expose supported formats in case they want to be listed or used elsewhere
+* Expose supported viewers and their requirements.
+  * Enforce requirements when using these viewers
+
 ## Dependencies
 * [lodash](https://github.com/lodash/lodash) ~4.7.X
 ## Authors

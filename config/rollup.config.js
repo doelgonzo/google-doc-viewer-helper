@@ -5,7 +5,7 @@ export default {
   input: 'src/gdoc-viewer-helper.js',
   output: {
     file: 'dist/gdoc-viewer-helper.min.js',
-    format: 'iife',
+    format: 'cjs',
     name: 'gdocViewerHelper',
     sourceMap: 'inline',
   },

@@ -15,7 +15,7 @@
     "preversion": "npm test",
     "version": "npm run build && git add -A dist",
     "postversion": "git push && git push --tags",
-    "report-coverage": "nyc report --reporter=text-lcov > ./config/coverage.lcov && codecov -t 44effc29-50a0-479d-966b-0a682f494768"
+    "report-coverage": "nyc npm test && nyc report --reporter=text-lcov > ./config/coverage.lcov"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",

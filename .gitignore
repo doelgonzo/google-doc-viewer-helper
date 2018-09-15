@@ -1,0 +1,14 @@
+# OSX
+.DS_Store
+
+# IntelliJ/WebStorm
+build/
+.idea
+
+# node.js/npm
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Results from running unit tests/coverage tests
+.nyc_output

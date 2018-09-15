@@ -1,0 +1,11 @@
+{
+  "env": {
+    "test": {
+      "presets": ["@babel/preset-env"]
+    }
+  },
+  "retainLines": true,
+  "ignore": [],
+  "plugins": [],
+  "presets": ["@babel/preset-env"]
+}

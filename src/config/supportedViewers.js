@@ -13,11 +13,11 @@ const baseOptions = {
 
 export default {
   default: {
-    baseUrl: `${googleBaseUrl}/viewer`,
+    baseUrl: `${googleBaseUrl}viewer`,
     options: baseOptions,
   },
   gview: {
-    baseUrl: `${googleBaseUrl}/gview`,
+    baseUrl: `${googleBaseUrl}gview`,
     options: baseOptions,
     deprecated: true,
   },

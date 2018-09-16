@@ -1,31 +1,24 @@
+const googleBaseUrl = 'https://docs.google.com/';
+const baseOptions = {
+  embedded: {
+    key: 'embedded',
+    options: [true, false],
+  },
+  url: {
+    key: 'url',
+    required: true,
+    mustEncode: true,
+  },
+};
+
 export default {
   default: {
-    baseUrl: 'https://docs.google.com/viewer',
-    options: {
-      embedded: {
-        key: 'embedded',
-        options: [true, false],
-      },
-      url: {
-        key: 'url',
-        required: true,
-        mustEncode: true,
-      },
-    },
+    baseUrl: `${googleBaseUrl}/viewer`,
+    options: baseOptions,
   },
   gview: {
-    baseUrl: 'https://docs.google.com/gview',
-    options: {
-      embedded: {
-        key: 'embedded',
-        options: [true, false],
-      },
-      url: {
-        key: 'url',
-        required: true,
-        mustEncode: true,
-      },
-    },
+    baseUrl: `${googleBaseUrl}/gview`,
+    options: baseOptions,
     deprecated: true,
   },
 };

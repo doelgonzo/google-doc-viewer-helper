@@ -10,11 +10,7 @@ const objectToQueryString = (toConvert) => {
 };
 
 const getFileExtension = (filename) => {
-  if (!filename) {
-    return '';
-  }
-
-  if (filename.includes('.')) {
+  if (filename && filename.includes('.')) {
     return filename
       .split('.')
       .pop()

@@ -4,7 +4,7 @@ import validators from './validators';
 
 const { hasOwnProperty } = Object.prototype;
 
-const getBadParamsMessage = badParam => `Parameter "${badParam}" was passed in with params object, you may obtain unexpected results`;
+const getBadParamsMessage = badParam => `Parameter "${badParam}" will override default embed params.`;
 
 const generateGoogleDocUrlWithParams = (params, viewerOverride) => {
   const viewer = supportedViewers[viewerOverride] || supportedViewers.default;

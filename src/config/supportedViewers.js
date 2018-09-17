@@ -19,6 +19,6 @@ export default {
   gview: {
     baseUrl: `${googleBaseUrl}gview`,
     options: baseOptions,
-    deprecated: true,
+    isDeprecated: true,
   },
 };

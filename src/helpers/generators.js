@@ -11,6 +11,12 @@ const generateGoogleDocUrlWithParams = (params, viewerOverride) => {
   if (!validators.isSupportedFormat(params.url)) {
     console.error('Invalid parameter "url", Google doc will still be returned but may yield unexpected results.');
   }
+  if (viewer.isDeprecated) {
+    console.warn(`'${viewerOverride}' is deprecated.`);
+  }
+  if (viewerOverride && (!hasOwnProperty.call(supportedViewers, viewerOverride))) {
+    console.warn(`'${viewerOverride}' is unsupported. Default viewer will be used.`);
+  }
 
   return generateUrl(viewer.baseUrl, params);
 };

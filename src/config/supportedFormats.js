@@ -1,9 +1,14 @@
 export default {
+  // Images
+  jpg: true,
   jpeg: true,
   png: true,
   gif: true,
   tiff: true,
   bmp: true,
+  svg: true,
+  // Video
+  webm: true,
   mpeg4: true,
   '3gpp': true,
   mov: true,
@@ -11,18 +16,35 @@ export default {
   mpegps: true,
   wmv: true,
   flv: true,
+  // audio
   ogg: true,
+  // Documents
   doc: true,
   docx: true,
   xls: true,
   xlsx: true,
+  pages: true,
   ppt: true,
   pptx: true,
   pdf: true,
-  svg: true,
   eps: true,
   ps: true,
+  txt: true,
+  // Other
+  ai: true,
+  dxf: true,
   ttf: true,
   xps: true,
   mts: true,
+  zip: true,
+  rar: true,
+  // Web/Code
+  html: true,
+  php: true,
+  js: true,
+  css: true,
+  c: true,
+  cpp: true,
+  h: true,
+  hpp: true,
 };

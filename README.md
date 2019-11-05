@@ -39,7 +39,7 @@ To generate a generic Google Doc URL, leverage
 const testFileUrl = 'http://www.fakeurl.com/myTest.pdf';
 const myParams = {
     embedded: false,
-    url: testUrl,
+    url: testFileUrl,
 };
 gDocHelper.generateGoogleDocUrlWithParams(myParams);
 // => https://docs.google.com/viewer?embedded=false&url=http%3A%2F%2Fwww.fakeurl.com%2FmyTest.pdf
